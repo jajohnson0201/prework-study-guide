@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
     <header id="top">
       <h1>Prework Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <img src="./bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
       <section class="card" id="html-section">
@@ -228,6 +228,181 @@
         <h2>JavaScript</h2>
         <ul>
           <li>Enter your JavaScript notes here</li>
+
+        <li>JAVASCRIPT NOTES
+          <br></br>
+	        <li>what is javascript- https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+	        <li>javascript data types and data structures- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
+            <br></br>
+            <li>example- var shape = "circle";
+              <li>var- declare a variable, A variable is a named container that allows us to store data in our code
+                <li>= - assignment operator, assign the specific data we want in our variable
+                  <br></br>
+                  <li>example- var topics = "HTML, CSS, Git, JavaScript";
+                    <li>string- ability to inlcude multiple variable topics, done by surronding string in quotation marks,
+                      <li>and commas to add more topics to the string.
+                        <br></br>
+                        <li>example- console.log(topics);
+                          <br></br>
+                          <li>consol.log -We can use the console.log method to output a message to the web console 
+	        by adding an argument. In this case, console.log will output the value of topics 
+	        to the web console because we've added it as an argument inside the parentheses.
+	        ...</li>
+	        <li>closer look at console.log. The word console refers to a test environment that 
+	        developers use to check out their code. The second part, .log(), is a method, 
+	        which means a set of instructions that can be executed by a computer. 
+	        The .log() method will output whatever we add inside the parentheses to the console.
+	        ...</li>
+          <li>The console.log method was created to make it easier for developers to test their code. 
+          Developers use it daily to debug and test the code that they write. Soon, 
+          using it will become second nature for you too!</li>
+          <br></br>
+          <br></br>
+          <li>IMPORTANT NOTES</li>
+          <li>Control Flow- refers to order in which computers execute code in a script(top to bottom)
+          the ORDER MATTERS</li>
+          <li>-What exactly do we mean by “truthy” and “falsy” in Javascript? 
+          A value is considered falsy if it is one of the following values: 
+          0, -0, On, "", null, undefined, NaN, or a Boolean data type with the value of false. 
+          All other values, including a Boolean with the value of true, are considered truthy.</li>
+          
+          <li>-The strict equality operator (===) checks to see if two values are equal,
+          and returns a Boolean result true if the values are equal and false if the values are not equal. </li>
+          <br></br>
+          <br></br>
+          <br></br>
+          <li>CONDITIONAL STATEMENTS/LOGIC</li>
+
+          <li>example(1)-   Conditional: 
+            <li> If (a plate is fancy) {
+              <li> put it on the top shelf
+              <li> } else if (a plate is plain) {
+                <li>  put it on the bottom shelf
+                  <li> }  else if (a plate is cracked) {
+                    <li> put it in the trash
+                      <li> } </li>
+              <br></br>
+          <li>example(2)-  
+            <li>if (first condition) {
+              <li>    // block of code to be executed if first condition is truthy
+              <li> } else if (second condition) {
+                <li>   // block of code to be executed if second condition is truthy
+                  <li> } </li>
+              <br></br>
+              <li>example(3)-    
+                <li>if (0) {
+                  <li> console.log("I'm 0!")
+                    <li> } else if (null) {
+                      <li> console.log("I'm null!")
+                        <li> } else if (true) {
+                          <li>  console.log("I'm true!")
+                            <li> }</li>
+              <br></br>
+              <li>if-code will only execute IF the statement meets a condition or is TRUTHY, if it is,
+          then it will do whatever acftion we ask it to do in between the curly brackets.
+          If the condition isnt true or has a value that isnt TRUTHY, 
+          then the computer will ignore whatever is in between the curly brackets and move on</li>
+          <br></br>
+          <li>else if- if statement with more than one condition, 
+          The computer will continue through all of the conditions that we list, 
+          evaluating whether or not a condition is truthy. Once it finds a condition that is truthy, 
+          it will run the code in the curly brackets associated with that condition, 
+          and then break out of the if statement.</li>
+          <br></br>
+          <br></br>
+          <br></br>
+          <li>ARRAY	</li>
+          <li>example- var shapes = ["triangle", "square", "pentagon", "circle"];</li>
+          <br></br>
+          <li>-To create an array, we declare a variable in the same way that we declared a variable 
+          with only one data item. That is, we use var and then give the variable a name. 
+          However, instead of assigning the variable to a single value, 
+          we assign the variable to a group of values.</li>
+          <br></br>
+          <li>Important Note- Arrays are useful tools for storing multiple items with different data types 
+          in a single variable, but not all arrays must have multiple data types. 
+          The array that we will add to our project only contains strings.</li>
+          <br></br>
+          <li>-array index- To work with individual data items inside an array, 
+          we need to have one more piece of information: the location of the data item in the array. 
+          This location is identified with a unique number called an index. 
+          Using each piece of data's index, or location number, we can access individual data inside the array.
+          ...	</li>
+          <br></br>
+          <li>In JavaScript and many other programming languages, arrays are zero-indexed and sequential. 
+          This means that the first item in any array has an index of 0, not 1. 
+          The indices, or location identifiers, will always be whole numbers that increase by 1 each time.
+          ...</li>
+          <br></br>
+          <li>array index example- ["triangle", "square", "pentagon", "circle"] 
+                                       0,            1,         2,        3
+          <li>var shapes = ["triangle", "square", "pentagon", "circle"];</li>
+          <li>console.log(shapes[0]);</li>
+<br></br>
+<br></br>
+<br></br>
+          <li>LOOPS</li>
+          <li>for- for loop uses the predictable pattern of indices to perform a task on all 
+          the items in an array by allowing a single code block to be executed over and over. 
+          Developers must use another statement, such as the conditional if statement that we just learned, 
+          to interrupt the control flow by executing a block of code a specific number of times.</li>
+          <br></br>
+          <li>array length-The array length is important because the for loop needs to know how many 
+          times the code will run until there are no items left in the array. 
+          We can find the length of an array by using a built-in property of an array, 
+          appropriately named length.
+          ...</li>
+          <br></br>
+          <li> example of array loop- </li>
+          <br></br>
+            <li> 1.	var x = 0;</li>
+
+              <li>statement 1- declare a variable (x), and give it a value of 0</li>
+              <br></br>
+                <li> 2.	x < shapes.length;</li>
+          
+                  <li>statement 2- this is the condition statement, 
+          As long as the number in the variable x is less than the length of the array, 
+          the loop will keep running. This will allow the loop to execute one time 
+          for each item in the array. We use the length built-in array property on our 
+          shapes array to express that condition, as shown.</li>
+          <br></br>
+          <li> 3.	x++</li>
+          
+            <li>statement 3- The final statement is what allows the array to iterate over each item. 
+          Since indices follow a predictable pattern, we know the number increases by 1 each time. 
+          The code x++ is a shortcut way of writing x+1. Now every time the code loops, 
+          x will increase by 1, as shown.</li>
+          <br></br>
+          <li>and to put it all together it looks like-</li>
+
+            <li>for(var x = 0; x < shapes.length; x++) { </li>
+              <li>console.log(shapes[x]);
+                <li> } </li>
+          <br></br>
+          <br></br>
+          <br></br>
+          <li>FUNCTION
+            <li>A function is different from a for loop or conditional statement because functions do not 
+          automatically execute when the JavaScript file (in our case, script.js) is run. 
+          Instead, you must call a function by name in order to execute it. 
+          While that may seem like extra work, having a block of code that executes only 
+          when we call it makes the code more easily reusable, 
+          because we can call it as many times as we need. Being able to call a function to execute it 
+          also means you can control where in the control flow a task is executed, or if it is executed at all.</li>
+          <br></br>
+          <li>Important Note- A function's name is followed by parentheses (). 
+          Later on, we will define parameters that can be placed inside the parentheses. 
+          For now, just remember that it is important to include the parentheses whenever you write a function.</li>
+          
+          <li>-functions are similar to if statements and for loops. 
+          the code to be executed is written inside the curly brackets{}</li>
+          <br></br>
+          <li>Math-Helps to select a random number</li>
+         <li> Math.floor() and Math.random() are both properties of JavaScript's 
+          built-in Math object that can be used together to generate a random number.</li>
+
+
         </ul>
    
       </section>
@@ -236,6 +411,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
-    <script src="./assets/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
